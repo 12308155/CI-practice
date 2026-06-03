@@ -1,4 +1,4 @@
-name: Jobs Demo
+name: Multiple Jobs
 
 on: push
 
@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Build Started"
+      - run: echo "Building Project"
 
-      - run: echo "Build Completed"
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Testing Project"
