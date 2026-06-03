@@ -1,12 +1,13 @@
-name: My First Workflow
+name: Jobs Demo
 
 on: push
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
     steps:
-     - run: echo "Build Started"
+      - run: echo "Build Started"
 
-     - run: echo "Build Completed"
+      - run: echo "Build Completed"
