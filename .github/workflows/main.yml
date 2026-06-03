@@ -1,17 +1,11 @@
-name: Multiple Jobs
+name: Manual Workflow
 
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Building Project"
-
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - run: echo "Testing Project"
+      - run: echo "Manual Workflow Executed"
